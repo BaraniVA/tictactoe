@@ -1,14 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import random
-
-
-# In[2]:
-
 
 def draw_board(board):
     # This function prints out the board that it was passed.
@@ -18,10 +8,6 @@ def draw_board(board):
     print(board[4] + '|' + board[5] + '|' + board[6])
     print('-+-+-')
     print(board[1] + '|' + board[2] + '|' + board[3])
-
-
-# In[3]:
-
 
 def input_player_letter():
     # Lets the player type which letter they want to be.
@@ -36,10 +22,6 @@ def input_player_letter():
     else:
         return ['O', 'X']
 
-
-# In[4]:
-
-
 def who_goes_first():
     # Randomly choose the player who goes first.
     if random.randint(0, 1) == 0:
@@ -47,16 +29,8 @@ def who_goes_first():
     else:
         return 'player'
 
-
-# In[5]:
-
-
 def make_move(board, letter, move):
     board[move] = letter
-
-
-# In[6]:
-
 
 def is_winner(bo, le):
     # Given a board and a player's letter, this function returns True if that player has won.
@@ -70,10 +44,6 @@ def is_winner(bo, le):
     (bo[7] == le and bo[5] == le and bo[3] == le) or # diagonal
     (bo[9] == le and bo[5] == le and bo[1] == le)) # diagonal
 
-
-# In[7]:
-
-
 def get_board_copy(board):
     # Make a duplicate of the board list and return it the duplicate.
     dupeBoard = []
@@ -83,17 +53,9 @@ def get_board_copy(board):
 
     return dupeBoard
 
-
-# In[8]:
-
-
 def is_space_free(board, move):
     # Return true if the passed move is free on the passed board.
     return board[move] == ' '
-
-
-# In[9]:
-
 
 def get_player_move(board):
 # Let the player type in their move.
@@ -102,10 +64,6 @@ def get_player_move(board):
         print('What is your next move? (1-9)')
         move = input()
     return int(move)
-
-
-# In[10]:
-
 
 def choose_random_move_from_list(board, movesList):
 # Returns a valid move from the passed list on the passed board.
@@ -118,10 +76,6 @@ def choose_random_move_from_list(board, movesList):
             return random.choice(possibleMoves)
         else:
             return None
-
-
-# In[11]:
-
 
 def get_computer_move(board, computerLetter):
     # Given a board and the computer's letter, determine where to move and return that move.
@@ -168,10 +122,6 @@ def is_board_full(board):
 
 print('Welcome to Tic Tac Toe!')
 
-
-# In[ ]:
-
-
 while True:
     # Reset the board
     theBoard = [' '] * 10
@@ -217,7 +167,7 @@ while True:
                     turn = 'player'
 
 
-# In[ ]:
+
 
 
 
