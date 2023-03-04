@@ -15,3 +15,8 @@ To make a move, enter a number between 1 and 9, corresponding to the position on
            4 | 5 | 6
            ---------
            1 | 2 | 3
+
+
+Credits
+
+This program was created by BaraniVA. If you have any questions or suggestions, please contact me at baranianandakumar2003@gmail.com.
